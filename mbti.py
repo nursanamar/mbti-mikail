@@ -1,6 +1,11 @@
+import os
+
+dirname = os.path.dirname(__file__)
+file_path = os.path.join(dirname,"mbti_types.txt")
+
 text = ""
 
-with open("mbti_types.txt") as file:
+with open(file_path) as file:
     lines = file.readlines()
     text = "".join(lines)
 
